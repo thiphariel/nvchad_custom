@@ -19,6 +19,9 @@ local plugins = {
         -- js/ts/node
         "eslint-lsp",
         "typescript-language-server",
+
+        -- typst
+        "typst-lsp",
       },
     },
   },
@@ -57,6 +60,11 @@ local plugins = {
     init = function()
       -- vim.g.rustfmt_autosave = 1
     end,
+  },
+  {
+    "kaarmu/typst.vim",
+    ft = "typst",
+    lazy = false,
   },
   {
     "christoomey/vim-tmux-navigator",
