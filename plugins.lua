@@ -69,6 +69,20 @@ local plugins = {
       "DiffviewClose",
     },
   },
+  {
+    -- https://github.com/otavioschwanck/arrow.nvim
+    "otavioschwanck/arrow.nvim",
+    opts = {
+      show_icons = true,
+      leader_key = ";", -- Recommended to be a single key
+    },
+    cmd = {
+      "ArrowFileIndex",
+      "ArrowCurrentFile",
+      "ArrowAction",
+      "ArrowDeleteMode",
+    },
+  },
 }
 
 return plugins
